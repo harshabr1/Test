@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>ACCOUNT_ADDRESS_MERGE_BEHAVIOR</fullName>
+        <categories>VBioPharma</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACCOUNT_ADDRESS_MERGE_BEHAVIOR</shortDescription>
+        <value>INACTIVE</value>
+    </labels>
+    <labels>
+        <fullName>ACCOUNT_vod</fullName>
+        <categories>EVENT_MANAGEMENT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACCOUNT_vod</shortDescription>
+        <value>Account</value>
+    </labels>
+    <labels>
+        <fullName>ADDRESS_DEL_LOCK_MSG</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ADDRESS_DEL_LOCK_MSG</shortDescription>
+        <value>Address cannot be deleted.</value>
+    </labels>
+    <labels>
+        <fullName>ADDRESS_PRIMARY_MSG</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ADDRESS_PRIMARY_MSG</shortDescription>
+        <value>A primary address cannot be marked inactive.</value>
+    </labels>
+    <labels>
+        <fullName>ADDRESS_UPD_LOCK_MSG</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ADDRESS_UPD_LOCK_MSG</shortDescription>
+        <value>Address cannot be updated.</value>
+    </labels>
+    <labels>
+        <fullName>AFFIL_NO_UPD_ENT</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AFFIL_NO_UPD_ENT</shortDescription>
+        <value>Error: The Account and Contact fields cannot be updated. Please delete the current Affiliation and create a new Affiliation between the desired entities.</value>
+    </labels>
+    <labels>
+        <fullName>ASSIGN_TO</fullName>
+        <categories>VBioPharma</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ASSIGN_TO</shortDescription>
+        <value>Assign to</value>
+    </labels>
+    <labels>
+        <fullName>CANNOT_DEL_INQ</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CANNOT_DEL_INQ</shortDescription>
+        <value>Cannot Delete a locked Medical Inquiry.</value>
+    </labels>
+    <labels>
+        <fullName>CANNOT_SUBMIT_CALL</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CANNOT_SUBMIT_CALL</shortDescription>
+        <value>The Call Report cannot be submitted.</value>
+    </labels>
+    <labels>
+        <fullName>CANNOT_UPD_INQ</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CANNOT_UPD_INQ</shortDescription>
+        <value>Cannot update a submitted inquiry.</value>
+    </labels>
+    <labels>
+        <fullName>COL_PRE_MAP</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>COL_PRE_MAP</shortDescription>
+        <value>This Column has been previously mapped for this data map template. Please modify the column number in order to save.</value>
+    </labels>
+    <labels>
+        <fullName>CONTACT_vod</fullName>
+        <categories>EVENT_MANAGEMENT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CONTACT_vod</shortDescription>
+        <value>Contact</value>
+    </labels>
+    <labels>
+        <fullName>CYCLE_PLAN_BEFORE_DELETE_ERROR</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CYCLE_PLAN_BEFORE_DELETE_ERROR</shortDescription>
+        <value>You may not update a locked Cycle Plan.</value>
+    </labels>
+    <labels>
+        <fullName>Call_Event_Display_Label</fullName>
+        <categories>VBioPharma</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Call_Event_Display_Label</shortDescription>
+        <value>Call</value>
+    </labels>
+    <labels>
+        <fullName>Call_Event_RecordType_Display</fullName>
+        <categories>VBioPharma</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Call_Event_RecordType_Display</shortDescription>
+        <value>false</value>
+    </labels>
+    <labels>
+        <fullName>Common_CancelButton_vod</fullName>
+        <categories>VBioPharma</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cancel button label</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Common_No_vod</fullName>
+        <categories>VBioPharma</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No</shortDescription>
+        <value>No</value>
+    </labels>
+    <labels>
+        <fullName>Common_SaveButton_vod</fullName>
+        <categories>VBioPharma</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save button label</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Common_Yes_vod</fullName>
+        <categories>VBioPharma</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Yes</shortDescription>
+        <value>Yes</value>
+    </labels>
+    <labels>
+        <fullName>DEL_KEY_MSG</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DEL_KEY_MSG</shortDescription>
+        <value>You cannot delete this object because some call report references it.</value>
+    </labels>
+    <labels>
+        <fullName>DEL_PRODUCT</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DEL_PRODUCT</shortDescription>
+        <value>You cannot delete this object because some call report references it.</value>
+    </labels>
+    <labels>
+        <fullName>DEL_PROD_STRAT</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DEL_PROD_STRAT</shortDescription>
+        <value>You cannot delete this object because some call report references it.</value>
+    </labels>
+    <labels>
+        <fullName>DEL_SAMPORDER</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DEL_SAMPORDER</shortDescription>
+        <value>Cannot delete a submitted Sample Order.</value>
+    </labels>
+    <labels>
+        <fullName>DUP_AFFIL</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DUP_AFFIL</shortDescription>
+        <value>The affiliation cannot be saved because the affiliation already exists. Please modify the existing affiliation.</value>
+    </labels>
+    <labels>
+        <fullName>ENABLE_REALTIME_ADDRESS_PUSH</fullName>
+        <categories>VBioPharma</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ENABLE_REALTIME_ADDRESS_PUSH</shortDescription>
+        <value>false</value>
+    </labels>
+    <labels>
+        <fullName>Kit_Type_Error</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Kit_Type_Error</shortDescription>
+        <value>Kit product is not supported.</value>
+    </labels>
+    <labels>
+        <fullName>LIMIT_AFFIL_MSG</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LIMIT_AFFIL_MSG</shortDescription>
+        <value>The Affiliation object requires a batch size of 30 or smaller.  Please reset the batch size and try again.</value>
+    </labels>
+    <labels>
+        <fullName>MUST_HAVE_FROM</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MUST_HAVE_FROM</shortDescription>
+        <value>You must specify a From Account or From Contact.</value>
+    </labels>
+    <labels>
+        <fullName>MUST_HAVE_TO</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MUST_HAVE_TO</shortDescription>
+        <value>You must specify a To Account or To Contact.</value>
+    </labels>
+    <labels>
+        <fullName>NO_ASSIGN_SAVED</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_ASSIGN_SAVED</shortDescription>
+        <value>Cannot assign a saved call.</value>
+    </labels>
+    <labels>
+        <fullName>NO_CREATE_NO_LOT_VOD</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_CREATE_NO_LOT_VOD</shortDescription>
+        <value>You cannot create No_Lot_vod for the selected product&apos;s type.</value>
+    </labels>
+    <labels>
+        <fullName>NO_DEL_ACCOUNT</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_DEL_ACCOUNT</shortDescription>
+        <value>This account cannot be deleted. Accounts with saved calls cannot be deleted.</value>
+    </labels>
+    <labels>
+        <fullName>NO_DEL_ADDRESS</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_DEL_ADDRESS</shortDescription>
+        <value>This address cannot be deleted. Addresses with saved or submitted calls cannot be deleted.</value>
+    </labels>
+    <labels>
+        <fullName>NO_DEL_ANA_MARKET</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_DEL_ANA_MARKET</shortDescription>
+        <value>You may not delete an Analytic Market that is referenced by an Analytic File.</value>
+    </labels>
+    <labels>
+        <fullName>NO_DEL_CALL_W_TRAN</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_DEL_CALL_W_TRAN</shortDescription>
+        <value>This call cannot be deleted. Calls with submitted disbursements may not be deleted.</value>
+    </labels>
+    <labels>
+        <fullName>NO_DEL_CONTACT</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_DEL_CONTACT</shortDescription>
+        <value>You cannot delete this object because some call report references it.</value>
+    </labels>
+    <labels>
+        <fullName>NO_DEL_DEA_ADDRESS</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_DEL_DEA_ADDRESS</shortDescription>
+        <value>You may not delete an address with DEA Address.</value>
+    </labels>
+    <labels>
+        <fullName>NO_DEL_LAST_ADDRESS</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_DEL_LAST_ADDRESS</shortDescription>
+        <value>You may not delete the last address.</value>
+    </labels>
+    <labels>
+        <fullName>NO_DEL_LOCK_ADDRESS</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_DEL_LOCK_ADDRESS</shortDescription>
+        <value>You may not delete a locked address.</value>
+    </labels>
+    <labels>
+        <fullName>NO_DEL_MEDEVENT</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_DEL_MEDEVENT</shortDescription>
+        <value>You cannot delete this object because some call report references it.</value>
+    </labels>
+    <labels>
+        <fullName>NO_DEL_MEDEVENT_SIGNED</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_DEL_MEDEVENT_SIGNED</shortDescription>
+        <value>You may not delete a Medical Event with a signature for an Attendee.</value>
+    </labels>
+    <labels>
+        <fullName>NO_DEL_MED_INQ_WITH_SIG</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_DEL_MED_INQ_WITH_SIG</shortDescription>
+        <value>Cannot delete a signed Medical Inquiry.</value>
+    </labels>
+    <labels>
+        <fullName>NO_DEL_ME_ADDRESS</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_DEL_ME_ADDRESS</shortDescription>
+        <value>You may not delete an address referenced by Medical Event.</value>
+    </labels>
+    <labels>
+        <fullName>NO_DEL_PRIMARY_ADDRESS</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_DEL_PRIMARY_ADDRESS</shortDescription>
+        <value>You may not delete a primary address.</value>
+    </labels>
+    <labels>
+        <fullName>NO_DEL_SAMPLOT_W_TRAN</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_DEL_SAMPLOT_W_TRAN</shortDescription>
+        <value>This Sample Lot cannot be deleted. Sample Lots with disbursements may not be deleted.</value>
+    </labels>
+    <labels>
+        <fullName>NO_DEL_SIGNED_ATTENDEE</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_DEL_SIGNED_ATTENDEE</shortDescription>
+        <value>You may not delete an Attendee with a Signature.</value>
+    </labels>
+    <labels>
+        <fullName>NO_DEL_SUB</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_DEL_SUB</shortDescription>
+        <value>You may not delete a submitted call or any of the supporting data.</value>
+    </labels>
+    <labels>
+        <fullName>NO_DOUBLE_CONFIRM</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_DOUBLE_CONFIRM</shortDescription>
+        <value>You have already received this item. Please refresh the page.</value>
+    </labels>
+    <labels>
+        <fullName>NO_DUP_COL_OR_PPLAN</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_DUP_COL_OR_PPLAN</shortDescription>
+        <value>There can be only one Column Label\\Payer/Plan Mapped combination in production at a time. Please modify the Column Label or Payer/Plan Mapped in order to save.</value>
+    </labels>
+    <labels>
+        <fullName>NO_FUTURE_SUBMIT</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_FUTURE_SUBMIT</shortDescription>
+        <value>Submission of future calls not allowed.</value>
+    </labels>
+    <labels>
+        <fullName>NO_MODIFY_INVENTORY_MONITORING</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_MODIFY_INVENTORY_MONITORING</shortDescription>
+        <value>You may not update or delete a locked Inventory Monitoring or any of the related data.</value>
+    </labels>
+    <labels>
+        <fullName>NO_MOD_ACCOUNT_NAME</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_MOD_ACCOUNT_NAME</shortDescription>
+        <value>The Account Name cannot be modified. Please Cancel or Undo your changes and try again.</value>
+    </labels>
+    <labels>
+        <fullName>NO_PARENT_CHAIN</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_PARENT_CHAIN</shortDescription>
+        <value>The selected Parent Benefit Design must be a top level Benefit Design. Please select another Benefit Design.</value>
+    </labels>
+    <labels>
+        <fullName>NO_SIG_DEL</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_SIG_DEL</shortDescription>
+        <value>You may not delete a Call with a Signature.</value>
+    </labels>
+    <labels>
+        <fullName>NO_TOUCH_EVE</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_TOUCH_EVE</shortDescription>
+        <value>This event is associated with a submitted call, it cannot be updated or deleted.</value>
+    </labels>
+    <labels>
+        <fullName>NO_TOUCH_EVE_INPROG</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_TOUCH_EVE_INPROG</shortDescription>
+        <value>This event is associated with a in-progress call, it cannot be deleted.</value>
+    </labels>
+    <labels>
+        <fullName>NO_TOUCH_SAMP_INV</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_TOUCH_SAMP_INV</shortDescription>
+        <value>The Inventory item that you are attempting to modify has been previously submitted and is read-only. Any modifications to the record have not been saved. Please click on the Cancel button or navigate from your current page.</value>
+    </labels>
+    <labels>
+        <fullName>NO_TOUCH_SAMP_ORDER_TRAN_AUD</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_TOUCH_SAMP_ORDER_TRAN_AUD</shortDescription>
+        <value>You cannot update or delete a Sample Order Transaction Audit Record.</value>
+    </labels>
+    <labels>
+        <fullName>NO_TOUCH_SAMP_TRAN</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_TOUCH_SAMP_TRAN</shortDescription>
+        <value>The transaction that you are attempting to modify has been previously submitted and is read-only. Any modifications to the record have not been saved. Please click on the Cancel button or navigate from your current page.</value>
+    </labels>
+    <labels>
+        <fullName>NO_TOUCH_SAMP_TRAN_AUD</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_TOUCH_SAMP_TRAN_AUD</shortDescription>
+        <value>You cannot update or delete a Sample Transaction Audit Record.</value>
+    </labels>
+    <labels>
+        <fullName>NO_UPDATE_FIELD</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_UPDATE_FIELD</shortDescription>
+        <value>The following fields cannot be updated on a Sample Lot: Name, OwnerId, Sample Lot Id and Sample Name.</value>
+    </labels>
+    <labels>
+        <fullName>NO_UPD_DEA_ADDRESS</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_UPD_DEA_ADDRESS</shortDescription>
+        <value>You may not update an address with DEA Address.</value>
+    </labels>
+    <labels>
+        <fullName>NO_UPD_SUB</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_UPD_SUB</shortDescription>
+        <value>You may not update a submitted call or any of the supporting data.</value>
+    </labels>
+    <labels>
+        <fullName>ONLINE_REGISTRANT_vod</fullName>
+        <categories>EVENT_MANAGEMENT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ONLINE_REGISTRANT_vod</shortDescription>
+        <value>Online Registrant</value>
+    </labels>
+    <labels>
+        <fullName>ONLY_ONE_FROM</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ONLY_ONE_FROM</shortDescription>
+        <value>Only one From Account or From Contact is allowed.</value>
+    </labels>
+    <labels>
+        <fullName>ONLY_ONE_NAME_DT</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ONLY_ONE_NAME_DT</shortDescription>
+        <value>There can be only one active Data Template with the name :</value>
+    </labels>
+    <labels>
+        <fullName>ONLY_ONE_TO</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ONLY_ONE_TO</shortDescription>
+        <value>Only one To Account or To Contact is allowed.</value>
+    </labels>
+    <labels>
+        <fullName>OVERLAP_ERROR</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OVERLAP_ERROR</shortDescription>
+        <value>Pricing Rules cannot overlap for a  matching start date or min/max quantity.</value>
+    </labels>
+    <labels>
+        <fullName>QUANTITY_ERROR</fullName>
+        <categories>Trigger-Error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>QUANTITY_ERROR</shortDescription>
+        <value>Quantity error</value>
+    </labels>
+    <labels>
+        <fullName>SELECT_AT_LEAST_ONE</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SELECT_AT_LEAST_ONE</shortDescription>
+        <value>Please select at least one record.</value>
+    </labels>
+    <labels>
+        <fullName>SELECT_NEW_CALL_OWNER</fullName>
+        <categories>VBioPharma</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SELECT_NEW_CALL_OWNER</shortDescription>
+        <value>Select New Call Owner</value>
+    </labels>
+    <labels>
+        <fullName>SLT_FieldChangedErrMsg</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Used Template ffiled changed</shortDescription>
+        <value>Field(s)  {0}   has changed</value>
+    </labels>
+    <labels>
+        <fullName>SLT_OverlapExisting</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SLT_OverlapExisting</shortDescription>
+        <value>overlapping with existing {0}</value>
+    </labels>
+    <labels>
+        <fullName>SLT_OverlapInside</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SLT_OverlapInside</shortDescription>
+        <value>Item {0} overlapping inside batch file with item {1}</value>
+    </labels>
+    <labels>
+        <fullName>TRANSFER_TO_REQ</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TRANSFER_TO_REQ</shortDescription>
+        <value>The &quot;Transfer To&quot; field is required for a transfer.</value>
+    </labels>
+    <labels>
+        <fullName>UPD_SAMPORDER</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UPD_SAMPORDER</shortDescription>
+        <value>Cannot update a submitted Sample Order.</value>
+    </labels>
+    <labels>
+        <fullName>USER_vod</fullName>
+        <categories>EVENT_MANAGEMENT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>USER_vod</shortDescription>
+        <value>User</value>
+    </labels>
+    <labels>
+        <fullName>USE_MULTI_SAMPLE_vod</fullName>
+        <categories>VBioPharma</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sample Lot key mode</shortDescription>
+        <value>true</value>
+    </labels>
+    <labels>
+        <fullName>Unable_To_Add_Event</fullName>
+        <categories>VBioPharma-TriggerError</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Unable_To_Add_Event</shortDescription>
+        <value>Unable to add Doctor Call Event.  Please contact you administrator to verify your profile has access to add Doctor Calls.</value>
+    </labels>
+    <labels>
+        <fullName>WALK_IN_vod</fullName>
+        <categories>EVENT_MANAGEMENT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WALK</shortDescription>
+        <value>Walk In</value>
+    </labels>
+</CustomLabels>

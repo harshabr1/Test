@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- 
+ -  S-Control: "Formulary Control"
+ -
+ -               Confidentiality Information:
+ -
+ - This module is the confidential and proprietary information of
+ - Verticals onDemand, Inc.; it is not to be copied, reproduced, or transmitted
+ - in any form, by any means, in whole or in part, nor is it to be used
+ - for any purpose other than that for which it is expressly provided
+ - without the written permission of Verticals onDemand.
+ - 
+ - Copyright (c) 2009 Verticals onDemand, Inc.  All Rights Reserved.
+ -
+ -->
+
+<html>
+	<head>
+		{!INCLUDE($SControl.VOD_BASE_SF_INCLUDES_vod)}
+	</head>
+	<body>
+		<script>
+			{!INCLUDE($SControl.VOD_URL_GEN_SNIPPET_vod)}
+			var myqueryparms = "&ACCTID=" + '{!Account.Id}';
+
+			var me = window.name;
+			if (me) {
+				var iframes = parent.document.getElementsByName(me);
+				if (iframes && iframes.length == 1) {
+					iframes[0].style.height = "500px";
+					iframes[0].setAttribute('scrolling', 'auto');
+					iframes[0].style.overflow = 'auto';
+				}
+			}
+
+			location.replace(getVoDURL ("formulary",myqueryparms));
+		</script>
+	</body>
+</html>

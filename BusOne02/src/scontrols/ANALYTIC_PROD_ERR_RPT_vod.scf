@@ -1,0 +1,35 @@
+<!-- 
+ -
+ -               Confidentiality Information:
+ -
+ - This module is the confidential and proprietary information of
+ - Verticals onDemand, Inc.; it is not to be copied, reproduced, or transmitted
+ - in any form, by any means, in whole or in part, nor is it to be used
+ - for any purpose other than that for which it is expressly provided
+ - without the written permission of Verticals onDemand.
+ - 
+ - Copyright (c) 2009 Verticals onDemand, Inc.  All Rights Reserved.
+ -
+ -->
+<html> 
+<head> 
+
+</head> 
+<body> 
+<script> 
+{!INCLUDE($SControl.VOD_URL_GEN_SNIPPET_vod)} 
+
+<!-- Put your queryparms here. Format is &<tag>=value --> 
+var id = "{!Analytics_Files_vod__c.Id}"; 
+var name = "{!URLENCODE(Analytics_Files_vod__c.Type_vod__c)}"; 
+var fname = "{!URLENCODE(Analytics_Files_vod__c.File_Name_vod__c)}"; 
+var status = "{!URLENCODE(TEXT(Analytics_Files_vod__c.Status_vod__c))}";
+var mkt = "{!URLENCODE(Analytics_Files_vod__c.Market_vodId__c)}"; 
+var myqueryparms = "&id="+id + "&dmname="+name +"&fname="+fname + "&status=" + status + "&mkt=" + mkt; 
+
+
+location.replace(getVoDURL ("APRODERRREP",myqueryparms)); 
+
+</script> 
+</body> 
+</html>

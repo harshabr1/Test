@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!-- 
+ -
+ -               Confidentiality Information:
+ -
+ - This module is the confidential and proprietary information of
+ - Verticals onDemand, Inc.; it is not to be copied, reproduced, or transmitted
+ - in any form, by any means, in whole or in part, nor is it to be used
+ - for any purpose other than that for which it is expressly provided
+ - without the written permission of Verticals onDemand.
+ - 
+ - Copyright (c) 2009 Verticals onDemand, Inc.  All Rights Reserved.
+ -
+ -->
+
+<html>
+<head>
+
+</head>
+<body>
+<script>
+{!INCLUDE($SControl.VOD_URL_GEN_SNIPPET_vod)}
+
+
+<!-- Put your queryparms herSample Inventory - newe. Format is &<tag>=value -->
+var ID='{! Medical_Inquiry_vod__c.Id}';
+var me = window.name;
+if (me) {
+var iframes = parent.document.getElementsByName(me);
+if (iframes && iframes.length == 1) {
+iframes[0].style.height = "2000px";
+}
+}
+
+var ACCID = '{!Medical_Inquiry_vod__c.Account_vodId__c}';
+if (ACCID == null || ACCID == '') {
+    ACCID = '{!URLENCODE($Request.ACCID)}'
+}
+
+var myqueryparms = "&id=" + ID + "&mode=n" ;
+var RecordType="{!URLENCODE($Request.RecordType)}";
+myqueryparms+= "&RecordType=" + RecordType
+var callId = '{!URLENCODE($Request.callId)}';
+if (callId != null && callId != ''){
+    myqueryparms+= "&Call2_vod__r.Id=" + callId;
+}
+var retURL = '{!URLENCODE($Request.retURL)}';
+if (retURL == null || retURL=='') {
+retURL = '{!URLFOR( $Action.Medical_Inquiry_vod__c.List ,  $ObjectType.Medical_Inquiry_vod__c )}';
+} 
+
+if (ACCID != null ) {
+myqueryparms+= "&ACCID=" + ACCID ;
+}
+myqueryparms+= "&retURL=" + retURL;
+
+location.replace(getVoDURL ("medinq",myqueryparms));
+
+</script>
+</body>
+</html>

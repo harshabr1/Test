@@ -1,0 +1,11 @@
+<link href="/sCSS/20.0/sprites/{!$User.UIThemeDisplayed }/default/common.css" type="text/css" media="handheld,print,projection,screen,tty,tv" rel="stylesheet">
+<link href="/sCSS/20.0/sprites/{!$User.UIThemeDisplayed }/allCustom.css" type="text/css" media="handheld,print,projection,screen,tty,tv" rel="stylesheet">
+<link href="/sCSS/20.0/sprites/{!$User.UIThemeDisplayed }/default/extended.css" type="text/css" media="handheld,print,projection,screen,tty,tv" rel="stylesheet">
+<script src="/soap/ajax/9.0/connection.js"  type="text/javascript"></script>
+<script src="/soap/ajax/9.0/apex.js" type="text/javascript"></script>
+<script src="/js/functions.js" type="text/javascript"></script>
+
+<style type="text/css">
+  body.Theme3_vod { background-color: #F8F8F8 }
+  body.Theme2_vod { background-color: #F3F3EC}
+</style>

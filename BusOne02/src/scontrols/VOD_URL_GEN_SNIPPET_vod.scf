@@ -1,0 +1,65 @@
+{!INCLUDE($SControl.VSESSION_vod)}
+{!INCLUDE($SControl.VOD_MAINT_EXCLUSIONLIST_vod)}
+
+function getCookie(c_name)
+{
+if (document.cookie.length>0)
+{
+c_start=document.cookie.indexOf(c_name + "=")
+if (c_start!=-1)
+{
+c_start=c_start + c_name.length+1
+c_end=document.cookie.indexOf(";",c_start)
+if (c_end==-1) c_end=document.cookie.length
+return unescape(document.cookie.substring(c_start,c_end))
+}
+}
+return ""
+}
+
+function isMaint() {
+     var freepass = false;
+     for (var x = 0; x < excludeuserlist.length; x++) {
+          if ('{! JSENCODE($User.Username)}'.indexOf(excludeuserlist[x]) == 0) 
+                freepass = true;
+
+     } 
+
+    if (freepass == false && IsSystemMaintenance == 'TRUE') 
+      return true;
+
+    return false;
+
+}
+
+function blockHTML () {
+document.bgColor = 'F3F3EC';
+document.write ("<B>The system is undergoing maintenance, please try again later.</B>");
+}
+
+function getVoDURL (oType, paramString)
+{
+if (isMaint() == true) {
+	blockHTML();
+	return '#';
+}
+var url =VOD_URL+"?VER="+VOD_VERSION+"&ses={!API.Session_ID}&url=" + encodeURIComponent("{!API.Partner_Server_URL_240}") + "&SSID=" + getCookie("sid") + "&oType=" + oType + paramString;
+
+return url;
+}
+
+function getQueryStringValue(url, name) {
+var query = url.search.substring(1);
+var pairs = query.split("&");
+ 
+for(var i = 0; i < pairs.length; i++) {
+ 
+var pos = pairs[i].indexOf('=');
+if (pos == -1) continue;
+var argname = pairs[i].substring(0,pos);
+var value = pairs[i].substring(pos+1);
+ 
+if (argname == name) return unescape(value);
+}
+return "";
+}

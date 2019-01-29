@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- 
+- 
+- Confidentiality Information: 
+- 
+- This module is the confidential and proprietary information of 
+- Verticals onDemand, Inc.; it is not to be copied, reproduced, or transmitted 
+- in any form, by any means, in whole or in part, nor is it to be used 
+- for any purpose other than that for which it is expressly provided 
+- without the written permission of Verticals onDemand. 
+- 
+- Copyright (c) 2009 Verticals onDemand, Inc. All Rights Reserved. 
+- 
+--> 
+
+<html>
+	<head>
+		{!INCLUDE($SControl.VOD_BASE_SF_INCLUDES_vod)}
+	</head>
+	<body>
+		<script>
+			{!INCLUDE($SControl.VOD_URL_GEN_SNIPPET_vod)}
+
+			function resizeIframe(size) {
+				var me = window.name;
+				if (me) { 
+					var iframes = parent.document.getElementsByName(me);
+					if (iframes && iframes.length == 1)  {
+                        if (size == 0) {
+                            size = 740;
+                        }
+						iframes[0].style.height = size + "px";
+						iframes[0].scrolling = "no";
+					}
+				}
+			}
+
+			var date = new Date();
+			var url = getVoDURL("ratings", "&ACCTID={!Account.Id}&ACCRECID={!Account.RecordTypeId}&cacheSuffix="+date.getTime());
+			
+			var sizingImage = document.createElement("img");
+			sizingImage.style.visibility = "hidden";
+			sizingImage.onload = function() {
+				setTimeout(function(){ 
+					resizeIframe(sizingImage.height); 
+					location.replace(url);
+					document.body.appendChild(sizingImage);
+				}, 0); 
+			};
+			sizingImage.src = url+"&method=getSizingImage";
+		</script>
+	</body>
+</html>

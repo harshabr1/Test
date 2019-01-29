@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>The object contains a record of outbound messages</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup to the associated HCP account record.</description>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Sent Messages</relationshipLabel>
+        <relationshipName>Sent_Messages</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Capture_Datetime_vod__c</fullName>
+        <description>The date time when the user trigger to send content to the HCP</description>
+        <externalId>false</externalId>
+        <label>Capture Datetime</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Content_Type_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Content_Type_vod stores the service account record in the Sent Message record if the record type of the Sent Message record is WeChat_vod</description>
+        <externalId>false</externalId>
+        <label>Content Type</label>
+        <referenceTo>Content_Type_vod__c</referenceTo>
+        <relationshipLabel>Sent Messages</relationshipLabel>
+        <relationshipName>Sent_Messages</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Content_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Content_vod represents the Multichannel Content to which the Sent_Message_vod record is associated</description>
+        <externalId>false</externalId>
+        <label>Content</label>
+        <referenceTo>Multichannel_Content_vod__c</referenceTo>
+        <relationshipLabel>Sent Messages</relationshipLabel>
+        <relationshipName>Sent_Messages</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Delivered_Datetime_vod__c</fullName>
+        <description>Delivered_Datetime_vod is the datetime when the message has reached the recipient&apos;s inbox</description>
+        <externalId>false</externalId>
+        <label>Delivered Datetime</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Detail_Group_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Detail_Group_vod represents the detail group to which the Sent_Email_vod record is associated. This will correspond to the Detail Group to which the product (Product_vod) is aligned.</description>
+        <externalId>false</externalId>
+        <label>Detail Group</label>
+        <referenceTo>Product_vod__c</referenceTo>
+        <relationshipLabel>Sent Messages (Detail Group)</relationshipLabel>
+        <relationshipName>Sent_Messages1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Last_Open_Datetime_vod__c</fullName>
+        <description>The last date time when the account open the content in WeChat</description>
+        <externalId>false</externalId>
+        <label>Last Open Datetime</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Opened_vod__c</fullName>
+        <description>Opened_vod captures if the message was opened at least once or not at all.</description>
+        <externalId>false</externalId>
+        <label>Opened</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Product_vod represents the product to which the multichannel content is associated</description>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <referenceTo>Product_vod__c</referenceTo>
+        <relationshipLabel>Sent Messages</relationshipLabel>
+        <relationshipName>Sent_Messages</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Sent_Datetime_vod__c</fullName>
+        <description>Sent_Datetime_vod is the datetime when the Tencent service dispatched the message.</description>
+        <externalId>false</externalId>
+        <label>Sent Datetime</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Status_vod__c</fullName>
+        <description>Status_vod captures the status of the message delivery.</description>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pending_vod</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sent_vod</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Delivered_vod</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Template_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Template_vod represents the WeChat message template to which the Sent_Message_vod record is associated</description>
+        <externalId>false</externalId>
+        <label>Template</label>
+        <referenceTo>Approved_Document_vod__c</referenceTo>
+        <relationshipLabel>Sent Messages</relationshipLabel>
+        <relationshipName>Sent_Messages</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Territory_vod__c</fullName>
+        <description>The territory associated to the user who sent the message</description>
+        <externalId>false</externalId>
+        <label>Territory</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Duration_vod__c</fullName>
+        <description>The sum of the duration that the account views the content (in seconds). This is updated by an APEX class job.</description>
+        <externalId>false</externalId>
+        <label>Total Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Interacts_With_Content_vod__c</fullName>
+        <description>The clickthrough action in the content</description>
+        <externalId>false</externalId>
+        <label>Total Interaction</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>User_vod__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>User_vod is a Lookup to the User that sent the message</description>
+        <externalId>false</externalId>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Sent_Messages</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>VExternal_Id_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>External ID to determine which Sent Message to write Multichannel Activity for</description>
+        <externalId>true</externalId>
+        <label>VExternal ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Sent Message</label>
+    <nameField>
+        <displayFormat>SM-{0000000000}</displayFormat>
+        <label>Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Sent Messages</pluralLabel>
+    <recordTypes>
+        <fullName>WeChat_vod</fullName>
+        <active>true</active>
+        <description>Sent_Message_vod recordtype for messages that originated from Approved WeChat</description>
+        <label>WeChat_vod</label>
+        <picklistValues>
+            <picklist>Status_vod__c</picklist>
+            <values>
+                <fullName>Delivered_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending_vod</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sent_vod</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

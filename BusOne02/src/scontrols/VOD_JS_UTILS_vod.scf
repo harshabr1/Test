@@ -1,0 +1,50 @@
+{!INCLUDE($SControl.VSESSION_vod)}
+
+function generateVODJSinclude(javascript) {
+
+	  var firstChar = javascript.charAt(0);
+	  var sep = '/';
+	  if (firstChar == '/')
+	     sep = "";
+	 
+      document.write('<script type="text/javascript" src="' + VOD_URL + sep + javascript +'" ><\/script>');
+}
+
+function generateVODlink (href, type, media, rel) {
+      var firstChar = href.charAt(0);
+	  var sep = '/';
+	  if (firstChar == '/')
+	     sep = "";
+	  
+      document.write('<link href="' + VOD_URL + sep + href +  '" type="'+type+'" media="'+media+'" rel="'+rel+'"/>');
+	
+}
+
+function generateVODimg (style, title, img) {
+	  var firstChar = img.charAt(0);
+	  var sep = '/';
+	  if (firstChar == '/' )
+	     sep = "";
+	  
+	  var output = '<img style="'+style+'" title="'+title+'" src="'+VOD_URL +sep +img+ '">';
+	  document.write('<img style="'+style+'" title="'+title+'" src="'+VOD_URL +sep +img+ '">');
+	  
+}
+function getMessageCategory (category) {
+
+	var user = sforce.connection.getUserInfo();
+	var language = user.userLanguage;
+	var messages = [];
+	messageresult = sforce.connection.query("Select Name, Text_vod__c from Message_vod__c where Active_vod__c = true and Language_vod__c='" + language + "' and Category_vod__c ='" + category+"'" );
+
+	messagerecords = messageresult.getArray("records");
+
+	for (var i=0; i < messagerecords.length; i++) {
+	var thismessage = messagerecords[i];
+
+	messages[thismessage.Name]= encodeURI(thismessage.Text_vod__c);
+	}
+
+return messages;
+
+}

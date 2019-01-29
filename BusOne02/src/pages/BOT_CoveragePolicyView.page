@@ -1,0 +1,17 @@
+<apex:page standardController="BOT_Coverage_Policy__c" extensions="BOT_CoveragePolicyViewExtn">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection columns="2">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel ><b>Test :</b></apex:outputLabel>
+                    <apex:outputText value="{!strRichText}" escape="false" />
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel ><b>Test 1 :</b></apex:outputLabel>
+                    <apex:outputText value="{!strRichText1}" escape="false" />
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>     
+        </apex:pageBlock>      
+    </apex:form>        
+</apex:page>

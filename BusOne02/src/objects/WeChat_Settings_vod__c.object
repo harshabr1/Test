@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Customer Settings for WeChat CRM</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>APPROVED_WECHAT_BASE_URL_vod__c</fullName>
+        <description>The base url for approved wechat application</description>
+        <externalId>false</externalId>
+        <label>APPROVED WECHAT BASE URL</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>ATTENDANCE_AGENDA_FIELDS_vod__c</fullName>
+        <description>Fields of Account_Attendance_wec_vod__c object for displaying and ordering in Agenda.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide up to 3 fields with &quot;;;&quot; delimiter. The fields will be displayed for each day.
+            Provide a date or datetime field after &quot;||&quot; delimiter for ordering and timeline</inlineHelpText>
+        <label>ATTENDANCE AGENDA FIELDS</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>CALL_AGENDA_FIELDS_vod__c</fullName>
+        <description>Fields of Call2_vod_c object for displaying and ordering in Agenda.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide up to 3 fields with &quot;;;&quot; delimiter. The fields will be displayed for each day.
+            Provide a date or datetime field after &quot;||&quot; delimiter for ordering and timeline</inlineHelpText>
+        <label>CALL AGENDA FIELDS</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>COACHING_AGENDA_FIELDS__c</fullName>
+        <externalId>false</externalId>
+        <label>COACHING AGENDA FIELDS</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>COACHING_DETAIL_VF_PAGE_URL_vod__c</fullName>
+        <description>The URL for the coaching detail VF page</description>
+        <externalId>false</externalId>
+        <label>COACHING_DETAIL_VF_PAGE_URL</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>COACHING_LISTPAGE_FILTERS_vod__c</fullName>
+        <description>This setting determines what filters values are available on the advanced coaching list page.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This setting points to a Veeva message, where the values are specified.</inlineHelpText>
+        <label>ADVANCED COACHING LIST PAGE FILTERS</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>COACHING_TEAM_SCOPE_vod__c</fullName>
+        <description>This setting determines how manager can select employees.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Value of 0 allows coach to select any employee, 1 limits to subordinates.</inlineHelpText>
+        <label>COACHING TEAM SCOPE</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DEPARTMENT_CLASS_FIELD_wec__c</fullName>
+        <externalId>false</externalId>
+        <label>DEPARTMENT FIELD MAPPING</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DISABLE_APPROVED_WECHAT_VERIFICATION_vod__c</fullName>
+        <defaultValue>&quot;false&quot;</defaultValue>
+        <description>A flag to disable the approved wechat verification process.</description>
+        <externalId>false</externalId>
+        <label>DISABLE_APPROVED_WECHAT_VERIFICATION</label>
+        <length>5</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DISABLE_JSSDK_vod__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>This setting determines if JSSDK is disabled in customer org</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Default value 0 will allow JSSDK in customer instance, 1 will disable it.</inlineHelpText>
+        <label>DISABLE JSSDK SERVICE</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DIS_COACHING_AGENDA_vod__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>This setting determines if coaching are available in my agenda</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Default Value 0 will not allow coaching display in my agenda, 1 will display coaching</inlineHelpText>
+        <label>DISPLAY COACHING IN AGENDA</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ENABLE_APPROVED_WECHAT_vod__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>The setting to enable Approved WeChat.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A value of 1 will enable Approved WeChat</inlineHelpText>
+        <label>ENABLE APPROVED WECHAT</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ENABLE_ATTENDANCE_NOTIFICATION_vod__c</fullName>
+        <defaultValue>&quot;false&quot;</defaultValue>
+        <description>It will allow admin to control whether a WeChat notification is sent when a new attendance created</description>
+        <externalId>false</externalId>
+        <label>ENABLE ATTENDANCE NOTIFICATION</label>
+        <length>5</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ENABLE_CONTENT_FORWARDING_vod__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>The default value is 0, meaning all contents are not to be forwarded.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The default value is 0, meaning all contents are not to be forwarded.</inlineHelpText>
+        <label>ENABLE CONTENT FORWARDING</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ENABLE_MANAGER_TERR_vod__c</fullName>
+        <description>This setting determines if manager territory is enabled</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Default Value 0 will disable manager territory on WeChat, 1 will enable</inlineHelpText>
+        <label>ENABLE MANAGER TERRITORY</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ENABLE_MY_ATTENDING_MEDICAL_EVENTS_vod__c</fullName>
+        <defaultValue>&quot;false&quot;</defaultValue>
+        <description>It will allow admin to control whether a tab showing all medical events that the current user is attending will be shown</description>
+        <externalId>false</externalId>
+        <label>ENABLE_MY_ATTENDING_MEDICAL_EVENTS</label>
+        <length>5</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ENABLE_NATIVE_DATETIME_PICKER_vod__c</fullName>
+        <defaultValue>&quot;false&quot;</defaultValue>
+        <description>Used to control whether to use native (mobile) date time picker</description>
+        <externalId>false</externalId>
+        <label>ENABLE_NATIVE_DATETIME_PICKER</label>
+        <length>5</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FEEDBACK_LIST_FIELDS_vod__c</fullName>
+        <description>Fields of WeChat_Followup_Activity_wec_vod object for displaying.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide up to 5 fields with &quot;;;&quot; delimiter. The fields will be displayed for each item</inlineHelpText>
+        <label>FEEDBACK LIST FIELDS</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>GROUP_CALL_AGENDA_FIELDS_vod__c</fullName>
+        <description>Fields of Call2_vod_c object for displaying and ordering in Agenda.Used for group call.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide up to 3 fields with &quot;;;&quot; delimiter. The fields will be displayed for each day.
+            Provide a date or datetime field after &quot;||&quot; delimiter for ordering and timeline</inlineHelpText>
+        <label>GROUP CALL AGENDA FIELDS</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>HCP_SUB_PAGE_URL_vod__c</fullName>
+        <description>The URL of the custom page that HCP reads disclaimer and subscribe to service account.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The URL of the custom page that HCP reads disclaimer and subscribe to service account.</inlineHelpText>
+        <label>HCP SUBSCRIBE PAGE URL</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HOSPITAL_RECORD_TYPES_vod__c</fullName>
+        <description>Record Types for Hospitals in Account object.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Record Types for Hospitals in Account object, delimited by &quot;;;&quot;</inlineHelpText>
+        <label>HOSPITAL RECORD TYPES</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>LISTVIEW_LENGTH_LIMIT_vod__c</fullName>
+        <description>The maximum number of records the listview service returns for each request. The number should be within the range of 1-999</description>
+        <externalId>false</externalId>
+        <label>LISTVIEW LENGTH LIMIT</label>
+        <length>3</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MESSAGE_LIMIT_vod__c</fullName>
+        <defaultValue>&quot;DAY:4&quot;</defaultValue>
+        <description>limit on how many WeChat messages multiple sales reps can send to one HCP during a period of time, say, a day, week or a month</description>
+        <externalId>false</externalId>
+        <label>MESSAGE LIMIT</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NEW_TERR_CACHE_vod__c</fullName>
+        <description>This value determines the number of days to get new territory cache. Default value is 30 days</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This value determines the number of days to get new territory cache. Default value is 30 days</inlineHelpText>
+        <label>NEW TERRITORY CACHE</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PENDING_COACHING_REPORT_NUM_vod__c</fullName>
+        <description>This setting is used to set the limit in listview soql used to fetch the view for pending coaching report. This should be large enough so that all coaching report with pending status could be fetched in a single query.  This should have format &quot;listview id (15bit) :limit;&quot;, for example 00B90000009260V:50</description>
+        <externalId>false</externalId>
+        <label>PENDING COACHING REPORT NUM</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PROD_CONTENT_RECIPIENT_LIST_FIELDS_vod__c</fullName>
+        <defaultValue>&quot;Formatted_Name_vod__c;;Account_Identifier_vod__c;;Primary_Parent_vod__c&quot;</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>The fields displayed on the HCP recipient list when users sends WeChat message.</inlineHelpText>
+        <label>PRODUCT CONTENT RECIPIENT LIST FIELDS</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PROFESSIONAL_RECORD_TYPES_vod__c</fullName>
+        <description>Record Types for Professional in Account object.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Record Types for Professional in Account object, delimited by &quot;;;&quot;</inlineHelpText>
+        <label>PROFESSIONAL RECORD TYPES</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>REPORT_DISPLAY_FIELD_vod__c</fullName>
+        <defaultValue>&quot;Formatted_Name_vod__c&quot;</defaultValue>
+        <description>Field to be displayed for HCP name in detailed report</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide the field that is displayed for HCP name in detailed report</inlineHelpText>
+        <label>REPORT DISPLAY FIELD</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TEMPLATE_DISPLAY_FIELD_vod__c</fullName>
+        <defaultValue>&quot;Formatted_Name_vod__c&quot;</defaultValue>
+        <description>Field to be displayed for HCP name in template message</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide the field that is displayed for HCP name in template message</inlineHelpText>
+        <label>TEMPLATE DISPLAY FIELD</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>TOT_AGENDA_FIELDS_vod__c</fullName>
+        <description>Fields of Time Off Territory object for displaying and ordering in Agenda.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide up to 3 fields with &quot;;;&quot; delimiter. The fields will be displayed for each day.
+            Provide a date or datetime field after &quot;||&quot; delimiter for ordering and timeline</inlineHelpText>
+        <label>TOT AGENDA FIELDS</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>USE_HTML5_GPS_CAPTURE_vod__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>USE_HTML5_GPS_CAPTURE</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WECHAT_CRM_BASE_URL_vod__c</fullName>
+        <description>This URL used to communicate between WeChat CRM and Approved WeChat.</description>
+        <externalId>false</externalId>
+        <label>WECHAT_CRM_BASE_URL</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>WeChat Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

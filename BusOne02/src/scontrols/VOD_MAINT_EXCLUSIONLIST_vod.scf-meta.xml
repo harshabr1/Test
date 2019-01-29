@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scontrol xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contentSource>Snippet</contentSource>
+    <description>For VOD internal use only</description>
+    <encodingKey>UTF-8</encodingKey>
+    <fileContent>AFQAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</fileContent>
+    <name>VOD_MAINT_EXCLUSIONLIST</name>
+    <supportsCaching>true</supportsCaching>
+</Scontrol>

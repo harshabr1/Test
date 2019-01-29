@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <webLinks>
+        <fullName>Record_a_Call_vod</fullName>
+        <availability>online</availability>
+        <description>Record a call report from a Contact instance.</description>
+        <displayType>button</displayType>
+        <height>2500</height>
+        <linkType>page</linkType>
+        <masterLabel>Record a Call</masterLabel>
+        <openType>sidebar</openType>
+        <page>Call_Report_From_Contact_vod</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

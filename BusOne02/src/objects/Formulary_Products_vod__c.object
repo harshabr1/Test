@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>To display products in the formulary viewer, they must be entered into Formulary Product. Formulary product is referred to by Benefit Design Lines. Formulary product must be loaded before Benefit Design Lines.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>BOT_Formulary_Product_ID__c</fullName>
+        <description>It is created by BusiessOne technologies. It is used to store BOT Drug ID.</description>
+        <externalId>true</externalId>
+        <label>Formulary Product ID</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>BOT_Is_BOT_Data__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is created by BusinessOne technologies. This field is used to identify the record created by BOT or Veeva.</description>
+        <externalId>false</externalId>
+        <label>Is BOT Data</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Competitor_vod__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates whether the product belongs to a competitor. If not, the product is assumed to be a company product and shows up in bold in the formulary viewer.</description>
+        <externalId>false</externalId>
+        <label>Competitor</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>External_ID_vod__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>External ID is only used for data loading.</description>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Market_vod__c</fullName>
+        <description>Market (such as Cholesterol Reducer) that this product belongs to.  This field is used as a filter in the formulary viewer.</description>
+        <externalId>false</externalId>
+        <label>Market</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Immunology</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Multiple Sclerosis</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Formulary Product</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Competitor_vod__c</columns>
+        <columns>Market_vod__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Drug Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Formulary Products</pluralLabel>
+    <recordTypes>
+        <fullName>BOT_Formulary_Product</fullName>
+        <active>true</active>
+        <description>It is created by BusinessOne Technologies Inc and used to store BOT Drug level records.</description>
+        <label>BOT_Formulary Product</label>
+        <picklistValues>
+            <picklist>Market_vod__c</picklist>
+            <values>
+                <fullName>Immunology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multiple Sclerosis</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

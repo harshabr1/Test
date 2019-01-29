@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- 
+ -
+ -               Confidentiality Information:
+ -
+ - This module is the confidential and proprietary information of
+ - Verticals onDemand, Inc.; it is not to be copied, reproduced, or transmitted
+ - in any form, by any means, in whole or in part, nor is it to be used
+ - for any purpose other than that for which it is expressly provided
+ - without the written permission of Verticals onDemand.
+ - 
+ - Copyright (c) 2007 Verticals onDemand, Inc.  All Rights Reserved.
+ -
+ -->
+<html>
+	<head>
+		{!INCLUDE($SControl.VOD_BASE_SF_INCLUDES_vod)}
+		<script>
+			{!INCLUDE($SControl.VOD_URL_GEN_SNIPPET_vod)}
+			var accountOptedOut = false;
+			var optOutChecked = '{!Account.PDRP_Opt_Out_vod__c}';
+			if (optOutChecked == '1'){ 
+				optOutChecked = true;
+			} else {
+				optOutChecked = false;
+			}
+			if ({!Account.IsPersonAccount} && optOutChecked) {
+				if (("{!Account.PDRP_Opt_Out_Date_vod__c}" == "") || (Date.parse("{!Account.PDRP_Opt_Out_Date_vod__c}") <= Date.parse("{!TODAY()}"))) {
+					accountOptedOut = true;
+				}
+			}
+			if (accountOptedOut) {
+				var user = sforce.connection.getUserInfo();
+				var query = sforce.connection.query("SELECT Name, Text_vod__c FROM Message_vod__c WHERE Language_vod__c='"+user.userLanguage+"' AND Category_vod__c='Analytics' AND Name='OptOut'");
+				var records = query.getArray("records");
+				var message = "opt out";
+				for (var i=0;i<records.length;i++) {
+					if (records[i].Name == "OptOut")
+						message = records[i].Text_vod__c;
+				}
+				alert(message);
+				history.go(-1);
+			} else {
+				location.replace(getVoDURL("analytics", "&analytic=Account_Summary_vod&today={!TODAY()}&accountId={!Account.Id}"));
+			}
+		</script>
+	</head>
+	<body/>
+</html>

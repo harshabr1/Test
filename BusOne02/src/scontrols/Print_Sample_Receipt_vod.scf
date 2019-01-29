@@ -1,0 +1,45 @@
+<!-- 
+- 
+- Confidentiality Information: 
+- 
+- This module is the confidential and proprietary information of 
+- Verticals onDemand, Inc.; it is not to be copied, reproduced, or transmitted 
+- in any form, by any means, in whole or in part, nor is it to be used 
+- for any purpose other than that for which it is expressly provided 
+- without the written permission of Verticals onDemand. 
+- 
+- Copyright (c) 2009 Verticals onDemand, Inc. All Rights Reserved. 
+- 
+--> 
+<html>
+<head>
+</head>
+<body>
+<script>
+{!INCLUDE($SControl.VOD_URL_GEN_SNIPPET_vod)}
+
+var ids = {!GETRECORDIDS( $ObjectType.Call2_vod__c )};
+if (ids) {
+if (ids.length == 1) {
+var myqueryparms = "&pdf=file&CID=" + ids[0];
+location.replace(getVoDURL ("receipt",myqueryparms));
+}
+else if (ids.length > 1) {
+alert('You can only select one row');
+window.history.back();
+}
+else {
+alert('No row has been selected');
+window.history.back();
+}
+}
+else {
+alert('Not configured properly')
+window.history.back();
+}
+
+
+</script>
+</body>
+
+</html>

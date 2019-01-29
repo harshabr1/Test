@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Contains Knipper Integration Configuration Settings</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Account_Detect_Change_FieldList__c</fullName>
+        <defaultValue>&apos;FirstName,Middle_vod__c,LastName,ME__c,External_ID_vod__c,Specialty_1_vod__c,Credentials_vod__c,PersonEmail&apos;</defaultValue>
+        <description>Used in Account_Detect_Knipper_Changes trigger.  When a change is detected during insert or update, the AccountModTime__c field timestamp is updated. Enter field API Names comma delimited, no spaces.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter field API Names comma delimited, no spaces.  When a change is detected during insert or update, the AccountModTime__c field timestamp is updated.</inlineHelpText>
+        <label>Account Detect Changes Field List</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Account_Detect_Changes_Record_Type_List__c</fullName>
+        <defaultValue>&apos;Professional_vod,KOL_vod,Staff&apos;</defaultValue>
+        <description>Used by Account_Detect_Knipper_Changes trigger.  The trigger updates the AccountModTime__c field with the current date/time when a selected field is modified and the recordtype developername matches one in this list.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter all RecordType DeveloperNames comma delimited, not spaces.  When a change is detected in one for the chosen fields of any of these record types, the AccountModTime__c field is updated with the current date/time.</inlineHelpText>
+        <label>Account Detect Changes Record Type List</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Address_Detect_Change_FieldList__c</fullName>
+        <defaultValue>&apos;Name,Address_line_2_vod__c,City_vod__c,State_vod__c,Zip_vod__c,Zip_4_vod__c,Primary_vod__c,DEA_vod__c,DEA_Status_vod__c,DEA_Expiration_Date_vod__c,License_vod__c,License_Expiration_Date_vod__c,Phone_vod__c,Fax_vod__c&apos;</defaultValue>
+        <description>Used in Address_Detect_Knipper_Changes trigger.  When a change is detected during insert or update, the AddressModTime__c field timestamp is updated. Enter field API Names comma delimited, no spaces.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter field API Names comma delimited, no spaces.  When a change is detected during insert or update, the AddressModTime__c field timestamp is updated.</inlineHelpText>
+        <label>Address Detect Changes Field List</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Address_Detect_Changes_Record_Type_List__c</fullName>
+        <defaultValue>&apos;FieldMaintained,CompanyMaintained&apos;</defaultValue>
+        <description>Used by Address_Detect_Knipper_Changes trigger.  The trigger updates the AddressModTime__c field with the current date/time when a selected field is modified and the recordtype developername matches one in this list.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter all RecordType DeveloperNames comma delimited, not spaces.  When a change is detected in one for the chosen fields of any of these record types, the AddressModTime__c field is updated with the current date/time.</inlineHelpText>
+        <label>Address Detect Changes Record Type List</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>External_ID__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <defaultValue>&apos;Knipper_Settings__c&apos;</defaultValue>
+        <description>External Id used to uniquely identify this record when moving between environments.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Enter a Unique Identifier for this record.  This field is case sensitive.</inlineHelpText>
+        <label>External ID</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Knipper Settings</label>
+    <visibility>Protected</visibility>
+</CustomObject>
